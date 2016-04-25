@@ -1,0 +1,19 @@
+1. https://www.stavros.io/posts/python-fuse-filesystem/
+
+This was the starting point for python fuse tutorial for me. All the Fuse Api operations from Operations class are implemented in this file. Even though this is for a persistent file system (single level) that read from another actual file system on the disk, this one helped get the idea of fuse in python.
+
+2. https://github.com/libfuse/python-fuse
+
+Memory.py example from this git link is another file system api that helped me formulate a few of my api implementations.
+
+3. https://github.com/libfuse/python-fuse/blob/master/fuse.py
+
+This python fuse api is used as is in this application. The ramdisk executable is my implementation of all the Operations api methods of this class.
+
+4. http://unix.stackexchange.com/questions/209173/invoke-python-script-through-make-command
+
+This is a tutotial on how to make python makefiles.
+
+
+
+The main differences from all of the above sources are to make the file system persistent. Secondly most of the online sources provide information on how to make one level of the file system. Here even though the data structure is flat the support extends to multi level hierarchy of files and folders.
